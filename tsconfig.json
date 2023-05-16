@@ -21,9 +21,16 @@
       "@src/*": ["src/*"],
       "@core/*": ["src/core/*"],
       "@pages/*": ["pages/*"],
-      "@styles/*": ["styles/*"]
+      "@styles/*": ["styles/*"],
+      "@data/*": ["data/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "data/songs.js",
+    "data/photos.js"
+  ],
   "exclude": ["node_modules", "**/*.test.ts"]
 }

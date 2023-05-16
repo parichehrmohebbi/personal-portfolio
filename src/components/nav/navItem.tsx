@@ -2,15 +2,15 @@ import Link from "next/link";
 
 const NavItem = ({ text, href, active }) => {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col md:w-40 sm:w-full">
       <div
-        className={`flex h-[3px] rounded-md ${
+        className={` h-[3px] rounded-md ${
           active ? "bg-primary-400" : "bg-secondary-300"
         }`}
       ></div>
-      <Link className={` flex `} href={href}>
+      <Link href={href}>
         <span
-          className={`flex w-40 justify-center items-center ${
+          className={`flex justify-center items-center ${
             active ? "text-primary-400" : "text-secondary-300"
           }`}
         >

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 import NavItem from "./navItem";
 
@@ -8,17 +8,20 @@ const MENU_LIST = [
   { text: "My Photography", href: "/photography" },
 ];
 const Navbar = () => {
-  const [navActive, setNavActive] = useState(null);
-  const [activeIdx, setActiveIdx] = useState(0);
+  const router = useRouter();
+  const asPath = router.asPath;
+  console.log("dddddd", asPath);
+  const [activeIdx, setActiveIdx] = useState(
+    asPath === "/" ? 0 : asPath === "/music" ? 1 : 2
+  );
 
   return (
-    <nav className="flex flex-col float-right px-6">
-      <div className={"flex space-x-1 my-4"}>
+    <div className=" md:float-right sm:justify-center sm:mb-10 ">
+      <div className={"grid gap-1 md:grid-cols-3 sm:grid-cols-1 my-4"}>
         {MENU_LIST.map((menu, idx) => (
           <div
             onClick={() => {
               setActiveIdx(idx);
-              setNavActive(false);
             }}
             key={menu.text}
           >
@@ -26,7 +29,7 @@ const Navbar = () => {
           </div>
         ))}
       </div>
-    </nav>
+    </div>
   );
 };
 

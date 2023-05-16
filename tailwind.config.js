@@ -14,6 +14,8 @@ module.exports = {
       primary: "#BEA48D",
       secondary: "#F5F5F5",
       thritery: "#F3ECE8",
+      white: "white",
+      black: "black",
       green: "green",
     },
 
@@ -28,6 +30,7 @@ module.exports = {
           200: "#F5F5F5",
           300: "#d6d3d1",
           400: "gray",
+          900: "#27272a",
         },
         blue: {
           950: "#17275c",

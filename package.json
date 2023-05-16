@@ -13,7 +13,7 @@
     "test:ci": "jest --config jest/jest.config.js --ci",
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",
-    "serve-json": "json-server --watch mockData/db.json --port 4000",
+    "serve-json": "json-server --watch data/db.json --port 4000",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
