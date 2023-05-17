@@ -5,12 +5,11 @@ import NavItem from "./navItem";
 const MENU_LIST = [
   { text: "Home", href: "/" },
   { text: "My Music", href: "/music" },
-  { text: "My Photography", href: "/photography" },
+  { text: "My Photography", href: "/photos" },
 ];
 const Navbar = () => {
   const router = useRouter();
   const asPath = router.asPath;
-  console.log("dddddd", asPath);
   const [activeIdx, setActiveIdx] = useState(
     asPath === "/" ? 0 : asPath === "/music" ? 1 : 2
   );

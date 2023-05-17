@@ -1,7 +1,7 @@
 import MusicCard from "@components/musicCard/musicCard";
 import useSWR from "swr";
 
-//client side data fetching using SWR
+//just to have a sample of: client side data fetching using SWR
 
 const fetcher = async () => {
   const res = await fetch("/api/songs", {
