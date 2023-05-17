@@ -21,7 +21,7 @@ export default function MusicCard({
     <div className="w-full flex justify-center items-center drop-shadow-4xl ">
       <div>
         <div>
-          <Image alt="Sharab" src={imageSrc} width={300} height={300}></Image>
+          <Image alt={title} src={imageSrc} width={300} height={300}></Image>
         </div>
         <div className="w-full flex flex-col justify-center pl-7 py-7 text-secondary-900 font-bold">
           <p className="flex font-serif">{title}</p>
