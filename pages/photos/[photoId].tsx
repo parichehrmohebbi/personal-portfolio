@@ -6,8 +6,8 @@ export default function PhotoGallery({ photo }) {
     <div className="w-full h-full bg-primary-200">
       <div className="flex justify-center items-center w-full px-36 overflow-auto">
         <Image
-          alt={photo.title}
-          src={photo.imageSrc}
+          alt={photo?.title}
+          src={photo?.imageSrc}
           width={200}
           height={160}
           sizes="(max-width: 768px) 100vw,
@@ -30,7 +30,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const { params } = context;
-  const photo = photos.find((c) => c.id == params.photoId);
+  const photo = photos.find((p) => p.id == params.photoId);
   return {
     props: {
       photo,
