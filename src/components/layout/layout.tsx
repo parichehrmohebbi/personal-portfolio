@@ -1,6 +1,5 @@
 import Header from "@components/layout/hedear";
 import Footer from "@components/layout/footer";
-import styles from "@styles/Home.module.css";
 
 export default function Layout({ children }) {
   return (

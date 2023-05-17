@@ -1,6 +1,3 @@
-import styles from "../styles/Home.module.css";
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className=" grid md:grid-cols-2 sm:grid-cols-1 h-full w-full">
