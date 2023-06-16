@@ -1,3 +1,5 @@
+![Personal portfolio](public/screenshot.png)
+
 ## About this repository
 
 - This is a Next.Js boilerplate configured to support: Typescript, Tailwind CSS, Storybook, Cypress, Jest, React Testing Library, SWR, Sass
