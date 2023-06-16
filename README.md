@@ -3,7 +3,7 @@
 ## About this repository
 
 - This is my personal portfolio implemented using: Next.JS, Typescript, Tailwind CSS, SWR
-- You can find nothing about my developer personality cause its obvious as the creator of the protfolio, but you can find me as a singer and as a photographer there 😉
+- You can find nothing about my developer personality there, maybe its obvious as the creator of the protfolio, but you can find me as a singer and as a photographer there 😉
 
 ## How to get it work
 
