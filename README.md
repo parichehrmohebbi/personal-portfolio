@@ -1,4 +1,4 @@
-![Personal portfolio](public/screenshot.png)
+![Personal portfolio](public/assets/images/screenshot.png)
 
 ## About this repository
 
